@@ -8,19 +8,30 @@ public class Matrix {
   private int height;
   private final int MAX = 2;
 
-  public Matrix(int width, int height){
+  public Matrix(int width, int height, Random rand){
     this.width = width;
     this.height = height;
     setM();
-    fillM();
+    fillM(rand);
   }
 
   private void setM(){
     m = new int[width * height];
   }
 
-  private void fillM(){
-    Random rand  = new Random();
+  public int[] getM(){
+    return m;
+  }
+
+  public int getWidth(){
+    return width;
+  }
+
+  public int getHeight(){
+    return height;
+  }
+
+  private void fillM(Random rand){
     for(int j = 0; j < height; j++){
       for(int i = 0; i < width; i++){
         m[i*j] = rand.nextInt(MAX);
@@ -28,8 +39,8 @@ public class Matrix {
     }
   }
 
-  public int[] getM(){
-    return m;
+  public int getValue(int width, int height){
+    return m[width * height];
   }
 
   public String toString(){
