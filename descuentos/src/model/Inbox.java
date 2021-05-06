@@ -4,10 +4,17 @@ import java.util.ArrayList;
 
 public class Inbox {
   private ArrayList<Message> messages;
+  @SuppressWarnings("unused")
+  private String email;
 
-  public Inbox() { 
+  public Inbox(String email) {
+    setEmail(email);
     setMessages();
   };
+
+  public void setEmail(String email) {
+    this.email = email;
+  }
 
   public ArrayList<Message> getMessageByTittle(){
     return null;

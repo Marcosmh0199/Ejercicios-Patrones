@@ -2,12 +2,24 @@ package model;
 
 public class User {
   private static int id = 1;
-  private String nombre;
   private int userId;
+  private String nombre;
+  private String email;
 
-  public User(String nombre){
+  private Inbox inbox;
+  
+  public User(String nombre, String email){
     setUserId(id);
     setNombre(nombre);
+    setEmail(email);
+    setInbox();
+  }
+
+  public Inbox getInbox() {
+    return inbox;
+  }
+  private void setInbox() {
+    inbox = new Inbox(email);
   }
 
   public int getUserId() {
@@ -25,6 +37,10 @@ public class User {
     this.nombre = nombre;
   }
 
-  
-
+  public String getEmail() {
+    return email;
+  }
+  public void setEmail(String email) {
+    this.email = email;
+  }
 }
