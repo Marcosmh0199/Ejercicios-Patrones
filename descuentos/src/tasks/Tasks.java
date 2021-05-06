@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import interfaces.IFlashDiscountTask;
 import model.FlashDiscount;
 
-public class Task implements IFlashDiscountTask{
+public class Tasks implements IFlashDiscountTask{
 
   private ArrayList<IFlashDiscountTask> tasks = new ArrayList<IFlashDiscountTask>();
 
