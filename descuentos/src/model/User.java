@@ -3,14 +3,14 @@ package model;
 public class User {
   private static int id = 1;
   private int userId;
-  private String nombre;
+  private String name;
   private String email;
 
   private Inbox inbox;
   
-  public User(String nombre, String email){
+  public User(String name, String email){
     setUserId(id);
-    setNombre(nombre);
+    setName(name);
     setEmail(email);
     setInbox();
   }
@@ -30,11 +30,11 @@ public class User {
     id++;
   }
 
-  public String getNombre() {
-    return nombre;
+  public String getName() {
+    return name;
   }
-  public void setNombre(String nombre) {
-    this.nombre = nombre;
+  public void setName(String name) {
+    this.name = name;
   }
 
   public String getEmail() {
@@ -42,5 +42,9 @@ public class User {
   }
   public void setEmail(String email) {
     this.email = email;
+  }
+
+  public String toString(){
+    return name;
   }
 }

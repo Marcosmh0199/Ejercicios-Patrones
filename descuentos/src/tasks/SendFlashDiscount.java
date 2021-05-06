@@ -15,10 +15,10 @@ public class SendFlashDiscount implements IFlashDiscountTask{
         "Hay un nuevo descuento", 
         "descuentosCmp@userInfo.com", 
         u.getEmail(), 
-        "Hola " + u.getNombre() + ", le informamos que contamos con un nuevo descuento a partir de " + fd.getBegDate() +" hasta "+ fd.getEndDate() + ".\n" + 
+        "Hola " + u.getName() + ", le informamos que contamos con un nuevo descuento a partir de " + fd.getBegDate() +" hasta "+ fd.getEndDate() + ".\n" + 
         "Por favor no responder a este mensaje.");
       u.getInbox().receiveMessage(m);
-      System.out.println("Descuento Flash envíado al usuario "+ u +"!");
+      System.out.println("Descuento Flash envíado al usuario "+ u +".");
     }
   }
 }
