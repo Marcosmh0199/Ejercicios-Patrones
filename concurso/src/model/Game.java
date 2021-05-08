@@ -29,7 +29,7 @@ public class Game {
     words = new ArrayList<Pair>();
     words.add(new Pair("Manzana"  , "Palabra; Se dice que comiendo esta fruta una vez al día, se evita la visita al doctor."));
     words.add(new Pair("Acera"    , "Palabra; Donde transitan los peatones."));
-    words.add(new Pair("Café"     , "Palabra; Bebida matutina para despetarse."));
+    words.add(new Pair("Aguadulce", "Palabra; Bebida dulce que se acostumbra tomar caliente."));
     words.add(new Pair("Pinto"    , "Palabra; Tradicional platillo costarricense que consiste en arroz mezclado con frijoles."));
     words.add(new Pair("Teclado"  , "Palabra; Se usa para escribir en una computadora."));
   }
@@ -51,7 +51,15 @@ public class Game {
     }
   }
 
+  public Pair getAnswer(){
+    return answer;
+  }
+
   public boolean checkAnswer(String answer){
-    return answer.toLowerCase().equals(this.answer.element.toLowerCase());
+    try {
+      return Integer.parseInt(answer) == Integer.parseInt(this.answer.element);
+    } catch (NumberFormatException e) {
+      return answer.equalsIgnoreCase(this.answer.element);
+    }
   }
 }
