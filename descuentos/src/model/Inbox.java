@@ -16,8 +16,8 @@ public class Inbox {
     this.email = email;
   }
 
-  public ArrayList<Message> getMessageByTittle(){
-    return null;
+  public ArrayList<Message> getMessages(){
+    return messages;
   }
   private void setMessages(){
     messages = new ArrayList<Message>();
