@@ -1,14 +1,8 @@
-## Getting Started
+## Descuentos
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Se desea contar con un programa que permita tener un grupo de clientes que se les envíe notificaciones cada vez que se va a realizar una promocion con descuentos flash, es decir, descuentos por x cantidad de minutos.
 
-## Folder Structure
+## Patrón utilizado: Command
 
-The workspace contains two folders by default, where:
+Esto con el fin de faciliar el envío de solicitudes a los clientes en el momento de notificar cuando se realice una promoción.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-## Dependency Management
-
-The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
