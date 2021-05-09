@@ -4,5 +4,5 @@ Se desea contar con un programa que permita tener un grupo de clientes que se le
 
 ## Patrón utilizado: Command
 
-Esto con el fin de faciliar el envío de solicitudes a los clientes en el momento de notificar cuando se realice una promoción.
+Se utilizó el patrón Command con el fin de faciliar el envío de solicitudes a los clientes en el momento de notificar cuando se realice una promoción.
 
