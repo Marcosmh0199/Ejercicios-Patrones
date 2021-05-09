@@ -1,7 +1,5 @@
 ## Matrices
+Se desea tener un programa que le va a permitir a clientes suscribirse a un concurso de adivina la respuesta correcta. El programa va a realizar la pregunta indicando si es un numero o si es una palabra, y los diferentes clientes van a indicar cuál puede ser la possible respuesta, El programa va a seleccionar quien dé la respuesta correcta de primero.
 
-Se desea contar con un programa que permita crear matrices, y determinar si ésta es una matriz identidad. Los valores de las matrices se llenan con valores al random.  Cada vez que se crea una nueva matriz, no se deben de copiar los valores.
-
-## Patrón utilizado: Singleton
-
-Singleton es utilizado cuando se necesita instanciar un solo objeto y todo acceso solicitado al objeto pasa por esta la instancia Singleton, en este caso se ve reflejado por la clase Matrix Analyzer, que es la encargada de evaluar todas las matrices.
+## Patrón utilizado: Servidor/Cliente
+La definición del problema a resolver se ve que es un caso ideal para el patrón cliente/servidor, que permite que multiples clientes se conecten a un mismo servidor y este supervise sus acciones y emita respuestas basandose en esto. 
